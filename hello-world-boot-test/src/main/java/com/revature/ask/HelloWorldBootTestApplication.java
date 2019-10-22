@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloWorldBootTestApplication {
 
-	@RequestMapping("/project-3/hello")
-	public String printGreeting() {
-		return "Hello Docker, this is for Revature 1908 Project 3!";
-	}
 	
+	@RequestMapping("/1908-reston")
+	public String initialMessage() {
+		return "This is an initial message after attempting to containerize the boot project!";
+	}
 	public static void main(String[] args) {
 		SpringApplication.run(HelloWorldBootTestApplication.class, args);
 	}
